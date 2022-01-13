@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "우진산전",
+    "slug": "wjsj",
+    "version": "2.0.5",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#FFFFFF"
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "js",
+        "jsx",
+        "svg"
+      ]
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.woojinsj.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses a camera to scan a QR code, allowing users to easily access product information."
+      }
+    },
+    "android": {
+      "versionCode": 6,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.woojinsj.app",
+      "config": {
+      },
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "woojinsj"
+  }
+}
