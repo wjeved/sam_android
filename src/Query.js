@@ -137,6 +137,8 @@ export const TRADE2 = gql`
         opte18
         opte19
         opte20
+        description
+        descriptione
     }
   }
 `;
@@ -226,6 +228,8 @@ export const TRADE = gql`
         eop18
         eop19
         eop20
+        description
+        descriptione
     }
   }
 `;

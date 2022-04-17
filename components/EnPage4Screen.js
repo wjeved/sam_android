@@ -430,6 +430,8 @@ const onShare = async () => {
 
 
                 <View style={styles.detailExWrap}>
+                    {(msgList.descriptione != "") ? 
+                    (<View style={styles.detailDescWrap}><Text style={styles.detailExText}>{msgList.descriptione}</Text></View>) : null}
                     {(msgList.opte1 != "" && msgList.eop1 != "") ?
                     (<Text style={styles.detailExText}>{msgList.opte1} : {msgList.eop1}</Text>):null}
                     {(msgList.opte2 != "" && msgList.eop2 != "") ?

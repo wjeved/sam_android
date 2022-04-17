@@ -341,8 +341,8 @@ const getFilterSet = async (key) => {
           </TouchableOpacity> */}
           <LogoIcon2 width={131} height={25} style={{marginTop:8}} />
 
-          <TouchableOpacity onPress={()=>setLangProc("KR")} style={{position:'absolute', top:22, right:20, paddingTop:4,paddingBottom:4, paddingLeft:8, paddingRight:8, backgroundColor:'#FFF', elevation:2, borderRadius:8}}>
-            <Text style={{color:"#77878F", fontSize:14}}>한국어</Text>
+          <TouchableOpacity onPress={()=>setLangProc("KR")} style={styles.lang}>
+            <Text style={{color:"#77878F", fontSize:14}}>ENG</Text>
           </TouchableOpacity>
         </View>
         

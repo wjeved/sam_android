@@ -86,7 +86,7 @@ const setFilter = async (key, value) => {
           <LogoIcon2 width={131} height={25} style={styles.logo} />
 
           <TouchableOpacity onPress={()=>setLangProc("EN")} style={styles.lang}>
-            <Text style={styles.langText}>ENG</Text>
+            <Text style={styles.langText}>한국어</Text>
           </TouchableOpacity>
         </View>
         

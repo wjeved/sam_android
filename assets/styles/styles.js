@@ -192,6 +192,9 @@ const styles = StyleSheet.create({
     detailExWrap: {
       marginLeft:20, marginRight:20, marginTop:20
     },
+    detailDescWrap: {
+      marginBottom:10, color:'rgba(39,59,53, 0.6)'
+    },
     detailExText: {
       marginTop:0, marginLeft:0, color:'rgba(39,59,53, 0.6)'
     },
