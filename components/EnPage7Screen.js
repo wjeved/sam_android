@@ -71,7 +71,7 @@ import styles from '../assets/styles/styles';
 import AuthContext from '../src/AuthContext';
 
 // base url
-const baseUrl = "http://woojinsj.com/";
+const baseUrl = "http://e-wjis.com/";
 const imgUrl = baseUrl + "pic/";
 const imgUrl2 = baseUrl + "pic/";
 
@@ -191,7 +191,7 @@ export default function Page7Screen({ navigation }) {
 
   const OnceView = (<Image style={styles.subTopImg3}
     source={{
-      uri: "http://woojinsj.com/pic/subTop2.png",
+      uri: "http://e-wjis.com/pic/subTop2.png",
     }} />);
     
     return (

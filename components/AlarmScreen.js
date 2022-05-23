@@ -68,7 +68,7 @@ import styles from '../assets/styles/styles';
 import AuthContext from '../src/AuthContext';
 
 // base url
-const baseUrl = "http://woojinsj.com/";
+const baseUrl = "http://e-wjis.com/";
 const imgUrl = baseUrl + "pic/";
 
 

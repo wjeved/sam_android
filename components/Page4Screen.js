@@ -33,7 +33,7 @@ import styles from '../assets/styles/styles';
 import AuthContext from '../src/AuthContext';
 
 // base url
-const baseUrl = "http://woojinsj.com/";
+const baseUrl = "http://e-wjis.com/";
 const imgUrl = baseUrl + "pic/";
 const imgUrl2 = baseUrl + "pic/";
 
@@ -237,7 +237,7 @@ const onShare = async () => {
   try {
     const result = await Share.share({
       message:
-        'http://woojinsj.com/product/'+idx ,
+        'http://e-wjis.com/product/'+idx ,
     });
     if (result.action === Share.sharedAction) {
       if (result.activityType) {
