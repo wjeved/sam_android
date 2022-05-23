@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache, HttpLink, ApolloLink } from '@apollo/clien
 import { onError } from "@apollo/client/link/error";
 
 const httpLink = new HttpLink({
-  uri: 'http://node.woojinsj.com/'
+  uri: 'http://node.e-wjis.com/'
   // uri: 'http://192.168.0.8:3000/'
 });
 
@@ -18,7 +18,7 @@ const elink = onError(({ graphQLErrors, networkError }) => {
 });
 
 export const client = new ApolloClient({
-  uri: 'http://node.woojinsj.com/',
+  uri: 'http://node.e-wjis.com/',
   // uri: 'http://192.168.0.8:3000/',
   cache: new InMemoryCache(),
   onError: ({ networkError, graphQLErrors }) => {
