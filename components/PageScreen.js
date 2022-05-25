@@ -123,18 +123,14 @@ const setFilter = async (key, value) => {
               style={styles.mainItem}>
                 <Text style={styles.mainItemText}>DEMU</Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.push("Page2", {cate1:"Railway System", cate2:"Rolling Stock", cate3:"Monorail"})} 
+              <TouchableOpacity onPress={() => navigation.push("Page2", {cate1:"Railway System", cate2:"Electric Equipment", cate3:"Converter Inverter"})} 
               style={styles.mainItem}>
-                <Text style={styles.mainItemText}>Monorail</Text>
+                <Text style={styles.mainItemText2}>Converter{'\n'}Inverter</Text>
               </TouchableOpacity>
 
             </View>
             <View style={styles.mainBox}>
               
-              <TouchableOpacity onPress={() => navigation.push("Page2", {cate1:"Railway System", cate2:"Electric Equipment", cate3:"Converter Inverter"})} 
-              style={styles.mainItem}>
-                <Text style={styles.mainItemText2}>Converter{'\n'}Inverter</Text>
-              </TouchableOpacity>
               <TouchableOpacity onPress={() => navigation.push("Page2", {cate1:"Railway System", cate2:"Electric Equipment", cate3:"VVVF Inverter"})} 
               style={styles.mainItem}>
                 <Text style={styles.mainItemText2}>VVVF{'\n'}Inverter</Text>
@@ -143,13 +139,13 @@ const setFilter = async (key, value) => {
               style={styles.mainItem}>
                 <Text style={styles.mainItemText}>APS</Text>
               </TouchableOpacity>
-            </View>
-            <View style={styles.mainBox}>
-              
               <TouchableOpacity onPress={() => navigation.push("Page2", {cate1:"Railway System", cate2:"Electric Equipment", cate3:"Train Control Monitoring System"})} 
               style={styles.mainItem}>
                 <Text style={styles.mainItemText}>TCMS</Text>
               </TouchableOpacity>
+            </View>
+            <View style={styles.mainBox}>
+              
               <TouchableOpacity onPress={() => navigation.push("Page2", {cate1:"Railway System", cate2:"Electric Equipment", cate3:"Public Address"})} 
               style={styles.mainItem}>
                 <Text style={styles.mainItemText2}>Public{'\n'}Address</Text>
@@ -158,20 +154,9 @@ const setFilter = async (key, value) => {
               style={styles.mainItem}>
                 <Text style={styles.mainItemText}>PID</Text>
               </TouchableOpacity>
-            </View>
-            <View style={styles.mainBox}>
-              
               <TouchableOpacity onPress={() => navigation.push("Page2", {cate1:"Railway System", cate2:"Electric Equipment", cate3:"Other parts"})} 
               style={styles.mainItem}>
                 <Text style={styles.mainItemText}>Other parts</Text>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.push("Page2", {cate1:"Railway System", cate2:"E&M System", cate3:"3rd Rail"})} 
-              style={styles.mainItem}>
-                <Text style={styles.mainItemText}>3rd Rail</Text>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.push("Page2", {cate1:"Railway System", cate2:"E&M System", cate3:"Guide Rail"})} 
-              style={styles.mainItem}>
-                <Text style={styles.mainItemText}>Guide Rail</Text>
               </TouchableOpacity>
             </View>
             <View style={{flexDirection:'row'}}>
