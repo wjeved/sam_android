@@ -361,14 +361,14 @@ const onShare = async () => {
   let tempTitle2 = String(msgList.title);
   let tempMode = "contain";
 
-  let val1, val2, val3 = "";
+  // let val1, val2, val3 = "";
 
-  if (msgList.cate3 == "Converter Inverter" || msgList.cate3 == "VVVF Inverter") {
-    let tempArr = (msgList.eop20).split("|");
-    val1 = "Dimension" + tempArr[0];
-    val2 = "Weight: " + tempArr[1];
-    val3 = "Ambient temp.: " + tempArr[2];
-  }
+  // if (msgList.cate3 == "Converter Inverter" || msgList.cate3 == "VVVF Inverter") {
+  //   let tempArr = (msgList.eop20).split("|");
+  //   val1 = "Dimension" + tempArr[0];
+  //   val2 = "Weight: " + tempArr[1];
+  //   val3 = "Ambient temp.: " + tempArr[2];
+  // }
 
 
   // 가로 너비 구하기
@@ -496,7 +496,7 @@ const onShare = async () => {
                         
                           let pfImg = imgUrl2 + item.img1;
                           //let tempTitle = cutByLen(item.title, 14);
-                          let tempTitle = item.title;
+                          let tempTitle = item.title2;
                           //console.log("length = " + item.title.length);
                           // if (item.title.length > 14) {
                           //   tempTitle = tempTitle + " ...";
@@ -512,9 +512,9 @@ const onShare = async () => {
                             <View style={styles.relItemImgWrap}>
                               <Image style={styles.tinyLogo} resizeMode={'contain'} source={{ uri: pfImg }} style={styles.relItemImg} />
                             </View>
-                            <StIcon width={42} height={42} style={styles.relSt} />
+                            {/* <StIcon width={42} height={42} style={styles.relSt} /> */}
                             <View style={{width:115}}>
-                                <Text style={styles.relTitle2} numberOfLines={1}>{tempTitle}</Text>
+                                <Text style={styles.relTitle2} numberOfLines={2}>{tempTitle}</Text>
                             </View>
                             
                         </TouchableOpacity>

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, useContext } from 'react';
-import { Animated, View, Button, Dimensions } from 'react-native';
+import { Animated, View, Button, Dimensions, NativeModules } from 'react-native';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -43,7 +43,17 @@ export default function FastScreen({ navigation }) {
 
           console.log("언어는? " + lang);
           if(lang == null) {
-            lang = "KR";
+            const deviceLanguage =
+            Platform.OS === 'ios'
+              ? NativeModules.SettingsManager.settings.AppleLocale ||
+              NativeModules.SettingsManager.settings.AppleLanguages[0] //iOS 13
+              : NativeModules.I18nManager.localeIdentifier;
+
+            if (deviceLanguage.indexOf('ko') >= 0) {
+              lang = "KR";
+            } else {
+              lang = "EN";
+            }
           }
           
           

@@ -277,15 +277,15 @@ const onShare = async () => {
     );
   }
 
-  let val1, val2, val3 = "";
+  // let val1, val2, val3 = "";
 
-  if (msgList.cate3 == "Converter Inverter" || msgList.cate3 == "VVVF Inverter") {
-    let tempArr = (msgList.op20).split("무게: ");
-    val1 = tempArr[0];
-    let tempArr2 = (tempArr[1]).split("작동온도: ");
-    val2 = "무게: " + tempArr2[0];
-    val3 = "작동온도: " + tempArr2[1];
-  }
+  // if (msgList.cate3 == "Converter Inverter" || msgList.cate3 == "VVVF Inverter") {
+  //   let tempArr = (msgList.op20).split("무게: ");
+  //   val1 = tempArr[0];
+  //   let tempArr2 = (tempArr[1]).split("작동온도: ");
+  //   val2 = "무게: " + tempArr2[0];
+  //   val3 = "작동온도: " + tempArr2[1];
+  // }
 
   // 화면 렌더링
 
@@ -409,9 +409,9 @@ const onShare = async () => {
                             <View style={styles.relItemImgWrap}>
                               <Image style={styles.tinyLogo} resizeMode={'contain'} source={{ uri: pfImg }} style={styles.relItemImg} />
                             </View>
-                            <StIcon width={42} height={42} style={styles.relSt} />
+                            {/* <StIcon width={42} height={42} style={styles.relSt} /> */}
                             <View style={{width:115}}>
-                                <Text style={styles.relTitle2} numberOfLines={1}>{tempTitle}</Text>
+                                <Text style={styles.relTitle2} numberOfLines={2}>{tempTitle}</Text>
                             </View>
                             
                         </TouchableOpacity>
